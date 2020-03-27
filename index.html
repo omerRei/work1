@@ -2,13 +2,48 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>omer site</title>
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-			crossorigin="anonymous"
-		/>
+		<style type="text/css" media="screen">
+			
+
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+}
+.fixed-nav-bar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.fixed-nav-bar a:hover {
+  background: #ddd;
+  color: black;
+}
+.main {
+  margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+}
+		</style>
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -18,59 +53,28 @@
 			crossorigin="anonymous"
 			src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"
 		></script>
-		<nav
-			class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark"
-			style="padding: 0px 0px; margin: 0px 0px "
-		>
-			<a
-				class="navbar-brand"
-				href="./index.html"
-				style="padding: 0px 0px; margin: 0px 0px "
-				><img
-					style="max-height: 50px ;max-width: 100px"
-					src="https://img.playbuzz.com/image/upload/ar_1.3333333333333333,c_crop/q_auto:good,f_auto,fl_lossy,w_640,c_limit/v1537508097/prk7jhn8ppiz2ogczvya.jpg"
-					class="img-responsive"
-					alt=""
-			/></a>
-			<span style="margin-left: 400px"></span>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a  class="nav-link" href="#navigateHere">About Misix</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#photos">My Photos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#playlsist">My Playlist</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#likebut">Like</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#qrCode">QR code</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#qAndA">Q&A</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contactUs">Contact Me</a>
-					</li>
-				</ul>
-			</div>
-			<a
-				class="navbar-brand"
-				href="./index.html"
-				style="padding: 0px 0px; margin: 0px 0px "
-				><img
-					style="max-height: 50px ;max-width: 100px"
-					src="https://img.playbuzz.com/image/upload/ar_1.3333333333333333,c_crop/q_auto:good,f_auto,fl_lossy,w_640,c_limit/v1537508097/prk7jhn8ppiz2ogczvya.jpg"
-					class="img-responsive"
-					alt=""
-			/></a>
-		</nav>
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+<nav class="fixed-nav-bar">
+	<a href="./index.html" style="padding: 0px 0px; margin: 0px 400px 0px 0px "
+		><img
+			style="max-height: 50px ;max-width: 100px"
+			src="https://img.playbuzz.com/image/upload/ar_1.3333333333333333,c_crop/q_auto:good,f_auto,fl_lossy,w_640,c_limit/v1537508097/prk7jhn8ppiz2ogczvya.jpg"
+			class="img-responsive"
+			alt=""
+	/></a>
+	<a href="#navigateHere">About Misix</a>
+	<a href="#photos">My Photos</a>
+	<a href="#playlsist">My Playlist</a>
+	<a href="#likebut">Like</a>
+	<a href="#qrCode">QR code</a>
+	<a href="#qAndA">Q&A</a>
+	<a href="#contactUs">contact us</a>
+</nav>
+<div class="main">
 		<div id="navigateHere" 
-			style="padding: 100px 100px 100px 100px; text-align: center; word-wrap: break-word;   filter: blur(100px); -webkit-filter: blur(0px);"
+			style="padding: 100px 100px 00px 100px; text-align: center; word-wrap: break-word;   filter: blur(100px); -webkit-filter: blur(0px);"
 		>
 			<h2
 				style="width: 100%; text-align: center; border-bottom: 1px solid #000; line-height: 0.1em; margin: 10px 0 20px;"
@@ -113,77 +117,29 @@
 					>Misix Photos</span
 				>
 			</h2>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<a>
-							<img
-								src="https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/p960x960/62214660_2420397224665829_4328196972637847552_o.jpg?_nc_cat=104&_nc_sid=7aed08&_nc_ohc=3ihxV4vmiasAX90DE7e&_nc_ht=scontent.fsdv3-1.fna&_nc_tp=6&oh=320eb260ccda4589e818e43a8e77c764&oe=5E9A2CA6"
-								alt="Lights"
-								style="width:100%"
-							/>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<a>
-							<img
-								src="https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/s960x960/78685624_2781062961932585_4439910450691309568_o.jpg?_nc_cat=104&_nc_sid=85a577&_nc_ohc=5yM7H8nOlz4AX_3GSwY&_nc_ht=scontent.fsdv3-1.fna&_nc_tp=7&oh=1fdbfe8895bc0a0f8f7fefe5fff480a0&oe=5E9CDD2B"
-								alt="Lights"
-								style="width:100%"
-							/>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<a>
-							<img
-								src="https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/64299195_2435147986524086_1779962639351283712_o.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=J81ZGSeHOdsAX8rRvHt&_nc_ht=scontent.fsdv3-1.fna&oh=fd792f638e3afbd67a6be0bbccfa733f&oe=5E9CA365"
-								alt="Lights"
-								style="width:100%"
-							/>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<a>
-							<img
-								src="https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/64987532_2439139469458271_7832986587930558464_o.jpg?_nc_cat=104&_nc_sid=05277f&_nc_ohc=kelZ24cnLuwAX8955hH&_nc_ht=scontent.fsdv3-1.fna&oh=25414781d8a310293045a5e551fc3b3c&oe=5E9B3DED"
-								alt="Lights"
-								style="width:100%"
-							/>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<a>
-							<img
-								src="https://i.pinimg.com/originals/89/2d/90/892d90036c53bc15fd13f9f7f93e9a78.png"
-								alt="Lights"
-								style="width:100%"
-							/>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<a>
-							<img
-								src="https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/52924177_2252083778163842_1625329218101444608_o.jpg?_nc_cat=102&_nc_sid=110474&_nc_ohc=tynVIvnwUzIAX-ctKHA&_nc_ht=scontent.fsdv3-1.fna&oh=98014727d2d2c3112870f462ce56d88c&oe=5E9BB5D4"
-								alt="Lights"
-								style="width:100%"
-							/>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/p960x960/62214660_2420397224665829_4328196972637847552_o.jpg?_nc_cat=104&_nc_sid=7aed08&_nc_ohc=3ihxV4vmiasAX90DE7e&_nc_ht=scontent.fsdv3-1.fna&_nc_tp=6&oh=320eb260ccda4589e818e43a8e77c764&oe=5E9A2CA6" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/s960x960/78685624_2781062961932585_4439910450691309568_o.jpg?_nc_cat=104&_nc_sid=85a577&_nc_ohc=5yM7H8nOlz4AX_3GSwY&_nc_ht=scontent.fsdv3-1.fna&_nc_tp=7&oh=1fdbfe8895bc0a0f8f7fefe5fff480a0&oe=5E9CDD2B" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/64987532_2439139469458271_7832986587930558464_o.jpg?_nc_cat=104&_nc_sid=05277f&_nc_ohc=kelZ24cnLuwAX8955hH&_nc_ht=scontent.fsdv3-1.fna&oh=25414781d8a310293045a5e551fc3b3c&oe=5E9B3DED" alt="Mountains" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/64987532_2439139469458271_7832986587930558464_o.jpg?_nc_cat=104&_nc_sid=05277f&_nc_ohc=kelZ24cnLuwAX8955hH&_nc_ht=scontent.fsdv3-1.fna&oh=25414781d8a310293045a5e551fc3b3c&oe=5E9B3DED" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/52924177_2252083778163842_1625329218101444608_o.jpg?_nc_cat=102&_nc_sid=110474&_nc_ohc=tynVIvnwUzIAX-ctKHA&_nc_ht=scontent.fsdv3-1.fna&oh=98014727d2d2c3112870f462ce56d88c&oe=5E9BB5D4" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.pinimg.com/originals/89/2d/90/892d90036c53bc15fd13f9f7f93e9a78.png" alt="Mountains" style="width:100%">
+  </div>
+</div>
 
 		<div id="playlsist" 
 			style="padding: 20px 100px 100px 100px; text-align: center; word-wrap: break-word;   filter: blur(100px); -webkit-filter: blur(0px);"
@@ -294,10 +250,23 @@
 			/>
 		</div>
 		<div>
-			<label for="gender">gender</label>
-			<select id="gender" name="gender">
-				<option value="male">male</option>
-				<option value="female">female</option>
+			<label for="email">email adrress</label>
+			<input
+				type="text"
+				id="email"
+				name="email"
+				placeholder="bla@blu.bli"
+			/>
+		</div>
+		<div>
+			<label for="emoji">emoji</label>
+			<select id="geemojinder" name="emoji">
+				<option value="tongue"><span style='font-size:100px;'>&#128512;</span></option
+				<option value="winky"><span style='font-size:100px;'>&#128540;</span></option>
+				<option value="sad"><span style='font-size:100px;'>&#128529;</span></option>
+				<option value="nothing"><span style='font-size:100px;'>&#128541;</span></option>
+				<option value="clown"><span style='font-size:100px;'>&#128565;</span></option>
+				<option value="sherif"><span style='font-size:100px;'>&#129312;</span></option>
 			</select>
 		</div>
 		<textarea
@@ -310,5 +279,8 @@
 	</form>
 </div>
 		</div>
+
+</div>
+
 	</body>
 </html>
